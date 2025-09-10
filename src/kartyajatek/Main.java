@@ -54,4 +54,13 @@ public class Main {
         } while (!jo);
         return oszlop;
     }
+    
+    
+    private static void kever() {
+        //a választott oszlop mindig középre kerüljön
+    }
+    
+    private static void melyikvolt() {
+        System.out.println("A gondolt lap:" + pakli[11]);
+    }
 }
