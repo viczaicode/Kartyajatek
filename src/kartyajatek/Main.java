@@ -40,4 +40,15 @@ public class Main {
             }
         }
     }
+    
+    public static void beker() {
+        boolean jo;
+        int oszlop;
+        do {
+            System.out.print("Melyik oszlop (1-3): ");
+            oszlop = sc.nextInt();
+            jo = oszlop >= 1 && oszlop <3 3;
+        } while (!jo);
+        return oszlop;
+    }
 }
