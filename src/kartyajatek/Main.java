@@ -10,13 +10,11 @@ public class Main {
     
 
     public static void main(String[] args) {
+        osszeallit();
         kirak();
-        for (int i = 0; i < pakli.length; i++) {
-            System.out.println(pakli[i]);
-        }
     }
 
-    public static void kirak() {
+    public static void osszeallit() {
         int db = 1;
         String[] szinek = {"P", "T", "Z", "M"};
         String[] ertekek = {"Ász", "Kir", "Fel", "X", "IX", "VIII"};
@@ -34,7 +32,12 @@ public class Main {
     
     
     
-    public static void osszeallit() {
-        
+    public static void kirak() {
+        for (int i = 0; i < pakli.length; i++) {
+            System.out.printf("%-7s".formatted(pakli[i]));
+            if (i % 3 == 0) {
+                System.out.println("\n");
+            }
+        }
     }
 }
