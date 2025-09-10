@@ -1,12 +1,15 @@
 
 package kartyajatek;
 
+import java.util.Scanner;
+
 
     
     
 public class Main {
 
     static String[] pakli = new String[22];
+    static Scanner sc = new Scanner(System.in);
     
 
     public static void main(String[] args) {
@@ -41,13 +44,13 @@ public class Main {
         }
     }
     
-    public static void beker() {
+    public static int beker() {
         boolean jo;
         int oszlop;
         do {
             System.out.print("Melyik oszlop (1-3): ");
             oszlop = sc.nextInt();
-            jo = oszlop >= 1 && oszlop <3 3;
+            jo = oszlop >= 1 && oszlop <=3;
         } while (!jo);
         return oszlop;
     }
